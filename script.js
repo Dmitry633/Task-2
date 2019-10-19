@@ -79,7 +79,9 @@ i--
  appData.moneyPerDay = appData.budget / 30; //создано новое свойство moneyPerDay  и в него будет записана конструкция appData.budget / 30
 //alert(appData.budget / 30);				//так было записано в Задании 1
 alert('Ежедневный бюджет: ' + appData.moneyPerDay); //после создания moneyPerDay можем вывести информацию в красивом виде
-/*Какой смысл + перед appData.moneyPerDay ?*/
+/*Какой смысл + перед appData.moneyPerDay ?  - Ответ :Нам нужно совершить конкатенацию (склейку) строк. Именно для этого и нужен плюс.
+alert('строка' + переменная(выражение) со строкой);
+*/
 if (appData.moneyPerDay < 100) {
 	console.log('Минимальный уровень достатка') ;
 } else if (appData.moneyPerDay > 100 && appData.moneyPerDay < 2000) {
